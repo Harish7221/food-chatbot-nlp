@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d37114;
+    padding: 15px 40px;
+    color: rgb(230, 167, 120);
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* ================= HERO ================= */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 32px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+/* ================= MENU ================= */
+.menu-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.menu-section h2 {
+    margin-bottom: 30px;
+    color: #d35400;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.menu-card {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-info h3 {
+    font-size: 18px;
+}
+
+.menu-info span {
+    background: #f1c40f;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* ================= INFO SECTIONS ================= */
+.info-section {
+    background: #f9f9f9;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.info-section h2 {
+    color: #d35400;
+    margin-bottom: 10px;
+}
+
+/* ================= CHATBOT POSITION ================= */
+df-messenger {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  --df-messenger-chat-window-width: 420px;
+  --df-messenger-chat-window-height: 650px;
+
+  --df-messenger-button-titlebar-color: #d35400;
+  --df-messenger-chat-background-color: #ffffff;
+  --df-messenger-font-color: #000000;
+  --df-messenger-user-message: #ffeaa7;
+  --df-messenger-send-icon: #d35400;
+
+  z-index: 9999;
+}
+

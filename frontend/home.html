@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pooja Eatery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="navbar">
+    <div class="logo">Pooja Eatery</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section id="home" class="hero">
+    <img src="banner.png" alt="Pooja Eatery Banner">
+    <div class="hero-text">
+        <h1>Fresh & Delicious</h1>
+        <p>Spicing Up Your Life with a Taste of India!</p>
+    </div>
+</section>
+
+<!-- ================= MENU SECTION ================= -->
+<section id="menu" class="menu-section">
+    <h2>Our Popular Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-card">
+            <img src="menu1.jpg" alt="Pav Bhaji">
+            <div class="menu-info">
+                <h3>Pav Bhaji</h3>
+                <span>6₹</span>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="menu2.jpg" alt="Chole Bhature">
+            <div class="menu-info">
+                <h3>Chole Bhature</h3>
+                <span>7₹</span>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="menu3.jpg" alt="Pizza">
+            <div class="menu-info">
+                <h3>Pizza</h3>
+                <span>8₹</span>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="menu4.jpg" alt="Mango Lassi">
+            <div class="menu-info">
+                <h3>Mango Lassi</h3>
+                <span>5₹</span>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="menu5.jpg" alt="Samosa">
+            <div class="menu-info">
+                <h3>Samosa</h3>
+                <span>5₹</span>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="menu6.jpg" alt="Masala Dosa">
+            <div class="menu-info">
+                <h3>Masala Dosa</h3>
+                <span>$4</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section id="location" class="info-section">
+    <h2>Our Location</h2>
+    <p>📍 38 Patli Gali, Mumbai</p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="info-section">
+    <h2>Contact Us</h2>
+    <p>📞 +91 791234567</p>
+    <p>📧 info@poojaeatery.com</p>
+</section>
+
+<!-- ================= CHATBOT ================= -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="mini-food-chatbot"
+  agent-id="2f23cb37-b1ef-40ab-9a78-b1c932d3291b"
+  language-code="en">
+</df-messenger>
+
+</body>
+</html>
